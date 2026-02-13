@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer página web responsive</title>
+</head>
+
+<body>
+     <style>
+ body{
+     margin: 0%;
+     font-family:Arial, Helvetica, sans-serif;
+     line-height: 1,5;
+    }
+
+ header, nav, main, footer{
+     padding: 15px;
+ }
+
+ header{
+    background-color: bisque;
+    color: darkgrey;
+ }
+
+ nav{
+    background-color: beige;
+    text-align: center;
+ }
+
+ footer{
+    background-color: darkgrey;
+    color: bisque;
+    text-align: center;
+ }
+
+ .contenedor{
+    display: flex;
+    gap: 15px;
+    padding: 16px;
+    box-shadow: darksalmon;
+    
+ }
+
+.col{
+   background-color: beige;
+   padding: 15px;
+   flex: 1;
+}
+
+
+@media(max-width:760px){
+.contenedor{
+ flex-direction: column;}
+}
+
+nav a{
+
+     margin-right: 10px;
+     text-decoration: none;
+     color: rgb(238, 170, 212);}
+
+nav a :hover{
+     
+    text-decoration: underline;
+
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+
+}
+
+
+
+
+     </style>
+
+     <header>
+         <h1>Mi web responsive</h1>
+          <p> Cinthya Ayala</p>
+     </header>
+
+     <nav>
+         <a href="#">Inicio</a>
+         <a href="#">Menú</a>
+         <a href="#">Contactanos</a>
+     </nav>
+
+     <main>
+
+          <div class="contenedor">
+
+              <section class="col">
+                  <h1>Seccion 1</h1>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ea sint repudiandae sed nulla rem est sunt alias culpa assumenda beatae, ratione perferendis quaerat. Consequuntur dignissimos deleniti sequi fugit laboriosam?</p> 
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti itaque corrupti debitis! Laudantium eos unde nam debitis expedita veniam voluptatem, laboriosam aliquam eaque, adipisci illo molestias quis neque! Corporis, quam?</p>
+                     <img src="https://i.pinimg.com/736x/59/dd/0d/59dd0dd0d8a945d500ab860588de8739.jpg" width="300px" height="300px">
+              </section>
+        
+              <section class="col">
+                  <h1>Seccion 2</h1>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ea sint repudiandae sed nulla rem est sunt alias culpa assumenda beatae, ratione perferendis quaerat. Consequuntur dignissimos deleniti sequi fugit laboriosam?</p> 
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti itaque corrupti debitis! Laudantium eos unde nam debitis expedita veniam voluptatem, laboriosam aliquam eaque, adipisci illo molestias quis neque! Corporis, quam?</p>
+                     <img src="https://i.pinimg.com/originals/02/a8/f1/02a8f14b2c23087490e5c3241a85dc9c.jpg" width="300px" height="300px">
+              </section>
+
+         </div>
+
+     </main>
+
+     <footer>
+        <p>2026- Ejemplo sencillo</p>
+     </footer>
+
+</body>
+
+</html
